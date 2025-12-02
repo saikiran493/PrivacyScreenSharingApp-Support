@@ -3,46 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Screen Sharing - Support</title>
+    <title>Privacy Screen Sharing - Features & Support</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Global Styles */
         body {
             font-family: 'Inter', sans-serif;
             margin: 0;
             min-height: 100vh;
             display: flex;
             justify-content: center;
-            align-items: center;
-            background: linear-gradient(135deg, #8e2de2, #4a00e0, #0a84ff); /* purple → blue */
+            align-items: flex-start;
+            background: linear-gradient(135deg, #8e2de2, #4a00e0, #0a84ff);
             color: #fff;
+            padding: 40px 20px;
         }
 
-        a { 
-            color: #ffd700; /* golden/yellow for contrast */
-            text-decoration: none; 
-            font-weight: 600;
-        }
-
-        a:hover { text-decoration: underline; }
-
-        /* Container */
         .container {
-            background: rgba(255, 255, 255, 0.05); /* slightly transparent white overlay */
+            background: rgba(255, 255, 255, 0.05);
             padding: 40px;
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            max-width: 700px;
-            text-align: center;
+            max-width: 900px;
+            width: 100%;
         }
 
         h1 {
             font-size: 2rem;
             margin-bottom: 20px;
-            color: #fff;
+            text-align: center;
         }
 
-        p {
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+            padding-bottom: 5px;
+        }
+
+        p, li {
             font-size: 1rem;
             line-height: 1.6;
         }
@@ -54,18 +53,49 @@
 
         ul li {
             margin: 10px 0;
+            padding-left: 25px;
+            position: relative;
         }
+
+        ul li::before {
+            content: "✔️";
+            position: absolute;
+            left: 0;
+        }
+
+        a { 
+            color: #ffd700; 
+            text-decoration: none; 
+            font-weight: 600;
+        }
+
+        a:hover { text-decoration: underline; }
 
         @media (max-width: 600px) {
             .container { padding: 20px; }
             h1 { font-size: 1.5rem; }
+            h2 { font-size: 1.3rem; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Privacy Screen Sharing - Support</h1>
-        <p>Thank you for using Privacy Screen Sharing. If you have any issues or need assistance, please contact us:</p>
+        <h1>Privacy Screen Sharing - Features & Support</h1>
+
+        <h2>App Features</h2>
+        <ul>
+            <li><strong>Selective Window Hiding:</strong> Hide only the apps and windows you choose during screen sharing.</li>
+            <li><strong>Notification Masking:</strong> Notifications remain private even when your screen is shared.</li>
+            <li><strong>Fake Cursor Overlay:</strong> Optional cursor protection to hide the actual cursor during screen capture.</li>
+            <li><strong>Real-Time Screen Detection:</strong> Detects screen recording or sharing and activates privacy measures instantly.</li>
+            <li><strong>Zero Crashes & Stable Performance:</strong> 0% crash rate with smooth, reliable operation.</li>
+            <li><strong>7-Day Trial Management:</strong> Unique device ID stored securely in Keychain to enforce trial periods without collecting personal info.</li>
+            <li><strong>Minimal Feedback Collection:</strong> Optional popovers for user feedback, including email for notifications about updates. No unnecessary data is collected.</li>
+            <li><strong>100% Organic Growth:</strong> App is designed to engage users naturally, without any marketing or advertising.</li>
+        </ul>
+
+        <h2>Support</h2>
+        <p>If you have any issues or need assistance, please contact us:</p>
         <ul>
             <li>Email: <a href="mailto:saikiran.tech07@gmail.com">saikiran.tech07@gmail.com</a></li>
         </ul>
