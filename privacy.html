@@ -9,48 +9,54 @@
         body {
             font-family: 'Inter', sans-serif;
             margin: 0;
-            background-color: #f9f9f9;
-            color: #333;
-            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            background: linear-gradient(135deg, #8e2de2, #4a00e0, #0a84ff);
+            color: #fff;
+            padding: 40px 20px;
         }
 
         .container {
+            background: rgba(255, 255, 255, 0.05); /* semi-transparent box */
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
             max-width: 800px;
-            margin: 60px auto;
-            padding: 0 20px;
-        }
-
-        h1, h2 {
-            color: #0a84ff;
+            width: 100%;
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 2rem;
             margin-bottom: 20px;
+            text-align: center;
         }
 
         h2 {
             font-size: 1.5rem;
-            margin-top: 40px;
+            margin-top: 30px;
             margin-bottom: 15px;
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+            padding-bottom: 5px;
         }
 
         p, li {
             font-size: 1rem;
+            line-height: 1.6;
         }
 
         ul {
             margin-left: 20px;
         }
 
-        a {
-            color: #0a84ff;
-            text-decoration: none;
+        a { 
+            color: #ffd700; 
+            text-decoration: none; 
+            font-weight: 600;
         }
 
-        a:hover {
-            text-decoration: underline;
-        }
+        a:hover { text-decoration: underline; }
 
         footer {
             text-align: center;
@@ -58,16 +64,17 @@
             background: #0a84ff;
             color: white;
             margin-top: 60px;
+            border-radius: 0 0 20px 20px;
         }
 
         @media (max-width: 600px) {
-            h1 { font-size: 2rem; }
+            .container { padding: 20px; }
+            h1 { font-size: 1.5rem; }
             h2 { font-size: 1.3rem; }
         }
     </style>
 </head>
 <body>
-
     <div class="container">
         <h1>Privacy Policy</h1>
         <p><strong>Privacy Screen Sharing</strong> ("we", "our", "the App") respects your privacy. This policy explains what data we collect and how we use it.</p>
@@ -76,17 +83,17 @@
         <ul>
             <li><strong>Device Identifier:</strong> We store a unique device ID in your Keychain. This ID is not linked to any personal information.</li>
             <li><strong>Feedback:</strong> If you provide feedback, it is sent to our Firebase Firestore database. No personal information is collected unless you include it in your feedback.</li>
-            <li><strong>Screen Recording:</strong> The app only records your screen when you explicitly start the screen sharing feature. You must grant macOS permission for screen recording. No data is being transmitted out of your system.</li>
+            <li><strong>Screen Recording:</strong> The app only records your screen when you explicitly start the screen sharing feature. You must grant macOS permission for screen recording. No data is transmitted out of your system.</li>
         </ul>
 
         <h2>Data Use</h2>
-        <p>We use the data solely to provide app functionality, and receive feedback to improve the app. We do capture any meaningful data that can be shared your data with third parties.</p>
+        <p>We use the data solely to provide app functionality and receive feedback to improve the app. We do not share your data with third parties.</p>
 
         <h2>Data Storage</h2>
         <p>Screen content is never stored locally or transmitted. All recordings exist temporarily in memory for display purposes and are discarded when the app is stopped.</p>
 
         <h2>Popovers / Feedback</h2>
-        <p>The first popover appears after 24 hours and collects minimal feedback via button selection only. Allowing optional email input for new version notifications. No other data is collected or shared.</p>
+        <p>The first popover appears after 24 hours and collects minimal feedback via button selection only. Optional email input is allowed for new version notifications. No other data is collected or shared.</p>
         
         <h2>Contact</h2>
         <p>If you have any questions about this privacy policy, please contact us at: <a href="mailto:saikiran.tech07@gmail.com">saikiran.tech07@gmail.com</a></p>
@@ -95,6 +102,5 @@
     <footer>
         &copy; 2025 Sai Kiran Palangthod • <a href="https://saikiran493.github.io/PrivacyScreenSharingApp-Support/" style="color:white;">Privacy Screen</a>
     </footer>
-
 </body>
 </html>
